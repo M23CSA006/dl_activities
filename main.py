@@ -13,14 +13,12 @@ def leaky_relu(x, alpha=0.01):
 def tanh(x):
     return np.tanh(x)
 
-# Generate data points
 x = np.linspace(-5, 5, 100)
 y_sigmoid = sigmoid(x)
 y_relu = relu(x)
 y_leaky_relu = leaky_relu(x)
 y_tanh = tanh(x)
 
-# Plot graphs
 plt.figure(figsize=(12, 8))
 
 plt.subplot(2, 2, 1)
